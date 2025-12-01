@@ -1,46 +1,46 @@
-### Exercise: Mastering `useState` in React
+### 练习：精通React中的`useState`
 
-In this exercise, you’ll learn how to use the `useState` hook for managing state in various scenarios, including basic usage, arrays, objects, and arrays of objects.
+在本练习中，你将学习如何在各种场景下使用`useState`钩子管理状态，包括基本用法、数组、对象以及对象数组。
 
-#### Step 1: Basic Usage of `useState`
+#### 步骤1：`useState`的基本用法
 
-1. Create a new file called `Counter.jsx`.
-2. Inside this file, create a functional component called `Counter`.
-3. Use `useState` to manage a simple counter state.
-   - Initialize the state with a value of `0`.
-   - Create a button to increment the counter by `1` when clicked.
-   - Display the current value of the counter.
+1. 创建一个名为`Counter.jsx`的新文件。
+2. 在该文件中，创建一个名为`Counter`的函数式组件。
+3. 使用`useState`管理一个简单的计数器状态。
+   - 将状态初始值设为`0`。
+   - 创建一个按钮，点击时将计数器加`1`。
+   - 显示计数器的当前值。
 
-#### Step 2: `useState` with an Array of Data
+#### 步骤2：`useState`结合数据数组
 
-1. Create a new file called `TodoList.jsx`.
-2. Inside this file, create a functional component called `TodoList`.
-3. Use `useState` to manage an array of todo items.
-   - Initialize the state with an empty array.
-   - Create a form to add new todo items to the list.
-   - Display the list of todo items.
+1. 创建一个名为`TodoList.jsx`的新文件。
+2. 在该文件中，创建一个名为`TodoList`的函数式组件。
+3. 使用`useState`管理待办事项数组。
+   - 将状态初始化为空数组。
+   - 创建一个表单，用于向列表中添加新的待办事项。
+   - 显示待办事项列表。
 
-#### Step 3: `useState` with an Object of Data
+#### 步骤3：`useState`结合数据对象
 
-1. Create a new file called `Profile.jsx`.
-2. Inside this file, create a functional component called `Profile`.
-3. Use `useState` to manage an object with user profile information.
-   - Initialize the state with an object containing `name` and `age`.
-   - Provide input fields to update the `name` and `age`.
-   - Display the updated profile information.
+1. 创建一个名为`Profile.jsx`的新文件。
+2. 在该文件中，创建一个名为`Profile`的函数式组件。
+3. 使用`useState`管理包含用户资料信息的对象。
+   - 将状态初始化为包含`name`和`age`的对象。
+   - 提供输入框用于更新`name`和`age`。
+   - 显示更新后的资料信息。
 
-#### Step 4: `useState` with an Array of Objects
+#### 步骤4：`useState`结合对象数组
 
-1. Create a new file called `ShoppingList.jsx`.
-2. Inside this file, create a functional component called `ShoppingList`.
-3. Use `useState` to manage an array of objects, where each object represents a shopping item with `name` and `quantity`.
-   - Initialize the state with an empty array.
-   - Create a form to add new items to the list.
-   - Display the list of shopping items.
+1. 创建一个名为`ShoppingList.jsx`的新文件。
+2. 在该文件中，创建一个名为`ShoppingList`的函数式组件。
+3. 使用`useState`管理对象数组，其中每个对象代表一个包含`name`和`quantity`的购物项。
+   - 将状态初始化为空数组。
+   - 创建一个表单，用于向列表中添加新的购物项。
+   - 显示购物项列表。
 
-#### Step 5: Render All Components in `App.jsx`
+#### 步骤5：在`App.jsx`中渲染所有组件
 
-1. In your `App.jsx` file, import the `Counter`, `TodoList`, `Profile`, and `ShoppingList` components:
+1. 在你的`App.jsx`文件中，导入`Counter`、`TodoList`、`Profile`和`ShoppingList`组件：
 
    ```jsx
    import Counter from "./Counter";
@@ -49,13 +49,13 @@ In this exercise, you’ll learn how to use the `useState` hook for managing sta
    import ShoppingList from "./ShoppingList";
    ```
 
-2. Inside the `App` component, render all four components:
+2. 在`App`组件中，渲染这四个组件：
 
    ```jsx
    function App() {
      return (
        <div>
-         <h1>React useState Examples</h1>
+         <h1>React useState示例</h1>
          <Counter />
          <TodoList />
          <Profile />

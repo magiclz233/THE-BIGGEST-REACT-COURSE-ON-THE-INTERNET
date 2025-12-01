@@ -1,35 +1,35 @@
-### Exercise: Using `useReducer` in React
+### 练习：在React中使用`useReducer`
 
-In this exercise, you will learn how to:
+在本练习中，你将学习如何：
 
-- Define a reducer function to manage state logic
-- Use the `useReducer` hook to manage complex state in a React component
-- Dispatch actions to update state
+- 定义reducer函数来管理状态逻辑
+- 使用`useReducer`钩子在React组件中管理复杂状态
+- 分发（Dispatch）动作以更新状态
 
 ---
 
-### Step 1: Setting Up the Reducer Function
+### 步骤1：设置Reducer函数
 
-1. Create a new file called `counterReducer.js`.
-2. Inside this file, define a reducer function that will manage a simple counter's state.
+1. 创建一个名为`counterReducer.js`的新文件。
+2. 在该文件中，定义一个reducer函数来管理简单计数器的状态。
 
-### Step 2: Using `useReducer` Hook
+### 步骤2：使用`useReducer`钩子
 
-1. Create a new file called `Counter.jsx`.
-2. Inside this file, create a functional component called `Counter`.
-3. Use the `useReducer` hook to manage the state of the counter.
+1. 创建一个名为`Counter.jsx`的新文件。
+2. 在该文件中，创建一个名为`Counter`的函数式组件。
+3. 使用`useReducer`钩子来管理计数器的状态。
 
-### Step 3: Extending the Reducer with More Actions
+### 步骤3：扩展Reducer以支持更多动作
 
-1. Modify the `counterReducer.js` file to add more actions for increasing and decreasing by a specific amount.
+1. 修改`counterReducer.js`文件，添加更多动作来实现按特定数量增加和减少计数。
 
-### Step 4: Using Payloads in Actions
+### 步骤4：在动作中使用载荷（Payload）
 
-1. Update the `Counter.jsx` file to allow the user to increase or decrease the count by a specific value using an input field.
+1. 更新`Counter.jsx`文件，允许用户通过输入框按特定值增加或减少计数。
 
-### Step 5: Rendering the Counter in `App.jsx`
+### 步骤5：在`App.jsx`中渲染计数器
 
-1. In your `App.jsx` file, import and render the `Counter` component.
+1. 在你的`App.jsx`文件中，导入并渲染`Counter`组件。
 
 ```jsx
 import React from "react";
@@ -38,7 +38,7 @@ import Counter from "./Counter";
 function App() {
   return (
     <div>
-      <h1>React useReducer Example</h1>
+      <h1>React useReducer示例</h1>
       <Counter />
     </div>
   );

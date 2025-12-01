@@ -1,38 +1,38 @@
-### Exercise: Using Props in React Components
+### 练习：在React组件中使用Props
 
-In this exercise, you will learn how to pass and use props in React components to make them dynamic and reusable.
+在本练习中，你将学习如何在React组件中传递和使用props，使组件具有动态性和可复用性。
 
-#### Step 1: Create a `Person` Component
+#### 步骤1：创建`Person`组件
 
-1. Create a new file called `Person.jsx`.
-2. Inside this file, create a functional component called `Person`.
-3. This component should accept `props` and render:
+1. 创建一个名为`Person.jsx`的新文件。
+2. 在该文件中，创建一个名为`Person`的函数式组件。
+3. 该组件应接收`props`并渲染：
 
-   - A `<h2>` element that displays the person's name.
-   - A `<p>` element that displays the person's age.
+   - 一个`<h2>`元素，显示人物的姓名。
+   - 一个`<p>`元素，显示人物的年龄。
 
-4. Use `props.name` and `props.age` to display the dynamic values passed from the parent component.
+4. 使用`props.name`和`props.age`来显示从父组件传递过来的动态值。
 
-#### Step 2: Create a `Product` Component
+#### 步骤2：创建`Product`组件
 
-1. Create a new file called `Product.jsx`.
-2. Inside this file, create a functional component called `Product`.
-3. This component should accept `props` and render:
+1. 创建一个名为`Product.jsx`的新文件。
+2. 在该文件中，创建一个名为`Product`的函数式组件。
+3. 该组件应接收`props`并渲染：
 
-   - A `<h2>` element that displays the product's name.
-   - A `<p>` element that displays the product's price.
+   - 一个`<h2>`元素，显示产品的名称。
+   - 一个`<p>`元素，显示产品的价格。
 
-4. Use `props.name` and `props.price` to display the values passed from the parent component.
+4. 使用`props.name`和`props.price`来显示从父组件传递过来的值。
 
-#### Step 3: Pass Props from `App.jsx`
+#### 步骤3：从`App.jsx`传递Props
 
-1. In your `App.jsx` file, import the `Person` and `Product` components:
+1. 在你的`App.jsx`文件中，导入`Person`和`Product`组件：
 
    ```jsx
    import Person from "./Person";
    import Product from "./Product";
    ```
 
-2. Inside the `App` component, pass dynamic data as props to both `Person` and `Product` components:
-   - Pass `name` and `age` as props to the `Person` component.
-   - Pass `name` and `price` as props to the `Product` component.
+2. 在`App`组件内部，将动态数据作为props传递给`Person`和`Product`组件：
+   - 向`Person`组件传递`name`和`age`作为props。
+   - 向`Product`组件传递`name`和`price`作为props。

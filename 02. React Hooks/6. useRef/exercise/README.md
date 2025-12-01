@@ -1,18 +1,18 @@
-### Exercise: Using `useRef` in React
+### 练习：在React中使用`useRef`
 
-In this exercise, you will learn how to:
+在本练习中，你将学习如何：
 
-- Use `useRef` to reference DOM elements.
-- Use `useRef` to store values that persist between renders without triggering re-renders.
+- 使用`useRef`引用DOM元素。
+- 使用`useRef`存储在渲染之间持久存在且不会触发重新渲染的值。
 
 ---
 
-### Step 1: Accessing a DOM Element with `useRef`
+### 步骤1：使用`useRef`访问DOM元素
 
-1. Create a new file called `FocusInput.jsx`.
-2. Inside this file, create a functional component that will focus on an input field when a button is clicked, using the `useRef` hook.
+1. 创建一个名为`FocusInput.jsx`的新文件。
+2. 在该文件中，创建一个函数式组件，该组件将在点击按钮时聚焦到输入框，使用`useRef`钩子实现。
 
-### Step 2: Persisting Values Between Renders with `useRef`
+### 步骤2：使用`useRef`在渲染之间持久化值
 
-1. Create a new file called `Timer.jsx`.
-2. Inside this file, create a component that implements a simple timer, where the timer’s interval is stored using `useRef`.
+1. 创建一个名为`Timer.jsx`的新文件。
+2. 在该文件中，创建一个实现简单计时器的组件，其中计时器的时间间隔使用`useRef`存储。

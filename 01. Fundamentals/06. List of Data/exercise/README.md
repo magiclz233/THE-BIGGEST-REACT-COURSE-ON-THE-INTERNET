@@ -1,12 +1,12 @@
-### Exercise: Rendering a List of Data with `.map()`
+### 练习：使用`.map()`渲染数据列表
 
-In this exercise, you will learn how to render a list of items using the `.map()` method in JSX.
+在本练习中，你将学习如何在JSX中使用`.map()`方法渲染项目列表。
 
-#### Step 1: Create a `UserList` Component
+#### 步骤1：创建`UserList`组件
 
-1. Create a new file called `UserList.jsx`.
-2. Inside this file, create a functional component called `UserList`.
-3. In the component, create a `users` array with the following objects, where each object represents a user with `id`, `name`, and `age`:
+1. 创建一个名为`UserList.jsx`的新文件。
+2. 在该文件中，创建一个名为`UserList`的函数式组件。
+3. 在组件中，创建一个包含以下对象的`users`数组，其中每个对象代表一个包含`id`、`name`和`age`的用户：
 
    ```javascript
    const users = [
@@ -16,13 +16,13 @@ In this exercise, you will learn how to render a list of items using the `.map()
    ];
    ```
 
-4. Use the `.map()` method to render a list of users. Each user's `name` and `age` should be displayed inside a `<div>` element. Use the `id` as the unique `key` for each list item.
+4. 使用`.map()`方法渲染用户列表。每个用户的`name`和`age`应显示在一个`<div>`元素内。将`id`用作每个列表项的唯一`key`。
 
-#### Step 2: Create a `ProductList` Component
+#### 步骤2：创建`ProductList`组件
 
-1. Create a new file called `ProductList.jsx`.
-2. Inside this file, create a functional component called `ProductList`.
-3. Create a `products` array with the following objects, where each object represents a product with `id`, `name`, and `price`:
+1. 创建一个名为`ProductList.jsx`的新文件。
+2. 在该文件中，创建一个名为`ProductList`的函数式组件。
+3. 创建一个包含以下对象的`products`数组，其中每个对象代表一个包含`id`、`name`和`price`的产品：
 
    ```javascript
    const products = [
@@ -32,18 +32,18 @@ In this exercise, you will learn how to render a list of items using the `.map()
    ];
    ```
 
-4. Use the `.map()` method to render the list of products. Each product’s `name` and `price` should be displayed inside a `<div>` element. Use the `id` as the `key` for each product.
+4. 使用`.map()`方法渲染产品列表。每个产品的`name`和`price`应显示在一个`<div>`元素内。将`id`用作每个产品的`key`。
 
-#### Step 3: Render the Components in `App.jsx`
+#### 步骤3：在`App.jsx`中渲染组件
 
-1. In your `App.jsx` file, import the `UserList` and `ProductList` components:
+1. 在你的`App.jsx`文件中，导入`UserList`和`ProductList`组件：
 
    ```jsx
    import UserList from "./UserList";
    import ProductList from "./ProductList";
    ```
 
-2. Inside the `App` component's return statement, render both the `UserList` and `ProductList` components:
+2. 在`App`组件的return语句中，渲染`UserList`和`ProductList`组件：
 
    ```jsx
    function App() {

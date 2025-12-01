@@ -1,57 +1,57 @@
-### Exercise: Styling Components in React
+### 练习：React中的组件样式设置
 
-In this exercise, you'll learn how to apply styles using different methods in React components, including inline styles, style objects, and React icons.
+在本练习中，你将学习如何在React组件中使用不同方法应用样式，包括内联样式、样式对象以及React图标。
 
-#### Step 1: Create a `StyledCard` Component with Inline Styles
+#### 步骤1：使用内联样式创建`StyledCard`组件
 
-1. Create a new file called `StyledCard.jsx`.
-2. Inside this file, create a functional component called `StyledCard`.
-3. Use inline styles to style the component:
+1. 创建一个名为`StyledCard.jsx`的新文件。
+2. 在该文件中，创建一个名为`StyledCard`的函数式组件。
+3. 使用内联样式为组件设置样式：
 
-   - Set the background color to light blue.
-   - Set padding to `20px`.
-   - Set border radius to `10px`.
-   - Set text color to dark blue.
+   - 将背景颜色设置为浅蓝色。
+   - 将内边距设置为`20px`。
+   - 将边框圆角设置为`10px`。
+   - 将文本颜色设置为深蓝色。
 
-4. Render a `<div>` with a title and description inside it.
+4. 渲染一个包含标题和描述的`<div>`。
 
-#### Step 2: Create a `ProfileCard` Component with Separate Style Object
+#### 步骤2：使用独立样式对象创建`ProfileCard`组件
 
-1. Create a new file called `ProfileCard.jsx`.
-2. Inside this file, create a functional component called `ProfileCard`.
-3. Define a `styles` object to hold the CSS properties:
+1. 创建一个名为`ProfileCard.jsx`的新文件。
+2. 在该文件中，创建一个名为`ProfileCard`的函数式组件。
+3. 定义一个`styles`对象来存放CSS属性：
 
-   - Set the background color to light gray.
-   - Set padding to `15px`.
-   - Set border radius to `8px`.
-   - Set text color to black.
+   - 将背景颜色设置为浅灰色。
+   - 将内边距设置为`15px`。
+   - 将边框圆角设置为`8px`。
+   - 将文本颜色设置为黑色。
 
-4. Apply the `styles` object to the `<div>` using the `style` attribute.
+4. 使用`style`属性将`styles`对象应用到`<div>`上。
 
-5. Render a `<div>` with a title and description inside it.
+5. 渲染一个包含标题和描述的`<div>`。
 
-#### Step 3: Create a `IconComponent` Using React Icons
+#### 步骤3：使用React图标创建`IconComponent`
 
-1. Install `react-icons` if you haven’t already:
+1. 如果尚未安装`react-icons`，请执行安装：
 
    ```bash
    npm install react-icons
    ```
 
-2. Create a new file called `IconComponent.jsx`.
-3. Inside this file, create a functional component called `IconComponent`.
-4. Import an icon from `react-icons`, such as `FaBeer` from `react-icons/fa`.
+2. 创建一个名为`IconComponent.jsx`的新文件。
+3. 在该文件中，创建一个名为`IconComponent`的函数式组件。
+4. 从`react-icons`中导入一个图标，例如从`react-icons/fa`中导入`FaBeer`。
 
-5. Style the icon using inline styles:
+5. 使用内联样式为图标设置样式：
 
-   - Set the font size to `30px`.
-   - Set the color to gold.
+   - 将字体大小设置为`30px`。
+   - 将颜色设置为金色。
 
-6. Render the icon with a title.
+6. 渲染带有标题的图标。
 
-#### Step 4: Render All Components in `App.jsx`
+#### 步骤4：在`App.jsx`中渲染所有组件
 
-1. In your `App.jsx` file, import the `StyledCard`, `ProfileCard`, and `IconComponent` components:
+1. 在你的`App.jsx`文件中，导入`StyledCard`、`ProfileCard`和`IconComponent`组件：
 
    ```jsx
    import StyledCard from "./StyledCard";
@@ -59,7 +59,7 @@ In this exercise, you'll learn how to apply styles using different methods in Re
    import IconComponent from "./IconComponent";
    ```
 
-2. Inside the `App` component, render all three components:
+2. 在`App`组件中，渲染这三个组件：
 
    ```jsx
    function App() {

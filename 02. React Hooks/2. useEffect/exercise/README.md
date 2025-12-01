@@ -1,26 +1,26 @@
-### Exercise: Understanding `useEffect` in React
+### 练习：理解React中的`useEffect`
 
-In this exercise, you’ll practice using the `useEffect` hook in different scenarios, including fetching data, handling side effects.
+在本练习中，你将在不同场景下练习使用`useEffect`钩子，包括获取数据、处理副作用等。
 
-#### Step 1: Basic Usage of `useEffect`
+#### 步骤1：`useEffect`的基本用法
 
-1. Create a new file called `BasicEffect.jsx`.
-2. Inside this file, create a functional component called `BasicEffect`.
-3. Use `useEffect` to log a message to the console whenever the component mounts (i.e., when it’s rendered the first time).
+1. 创建一个名为`BasicEffect.jsx`的新文件。
+2. 在该文件中，创建一个名为`BasicEffect`的函数式组件。
+3. 使用`useEffect`在组件挂载时（即首次渲染时）向控制台打印一条消息。
 
-#### Step 2: `useEffect` with Dependencies
+#### 步骤2：带依赖项的`useEffect`
 
-1. Create a new file called `CounterEffect.jsx`.
-2. Inside this file, create a functional component called `CounterEffect`.
-3. Use `useEffect` to update the document title whenever a counter value changes.
-   - Initialize a `count` state with `0` using `useState`.
-   - Render a button that increments the count.
-   - Use `useEffect` to update the document title whenever `count` changes.
+1. 创建一个名为`CounterEffect.jsx`的新文件。
+2. 在该文件中，创建一个名为`CounterEffect`的函数式组件。
+3. 使用`useEffect`在计数器值变化时更新文档标题。
+   - 使用`useState`初始化`count`状态为`0`。
+   - 渲染一个用于增加计数的按钮。
+   - 使用`useEffect`在`count`变化时更新文档标题。
 
-#### Step 3: `useEffect` for Fetching Data
+#### 步骤3：使用`useEffect`获取数据
 
-1. Create a new file called `FetchDataEffect.jsx`.
-2. Inside this file, create a functional component called `FetchDataEffect`.
-3. Use `useEffect` to fetch data from an API when the component mounts.
-   - Use the API endpoint `https://jsonplaceholder.typicode.com/posts` to fetch some data.
-   - Store the data in a state variable and display the title of the first post.
+1. 创建一个名为`FetchDataEffect.jsx`的新文件。
+2. 在该文件中，创建一个名为`FetchDataEffect`的函数式组件。
+3. 使用`useEffect`在组件挂载时从API获取数据。
+   - 使用API端点`https://jsonplaceholder.typicode.com/posts`获取一些数据。
+   - 将数据存储在状态变量中，并显示第一篇帖子的标题。

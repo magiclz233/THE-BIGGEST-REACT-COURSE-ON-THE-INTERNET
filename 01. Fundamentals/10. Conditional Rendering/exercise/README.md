@@ -1,41 +1,41 @@
-### Exercise: Conditional Rendering in React
+### 练习：React中的条件渲染
 
-In this exercise, you will practice different ways to render JSX conditionally in React components.
+在本练习中，你将练习在React组件中以不同方式进行JSX的条件渲染。
 
-#### Step 1: Create a `Weather` Component with `if`, `else if`, and `else`
+#### 步骤1：使用`if`、`else if`和`else`创建`Weather`组件
 
-1. Create a new file called `Weather.jsx`.
-2. Inside this file, create a functional component called `Weather`.
-3. The component should:
-   - Take a `temperature` prop.
-   - Use `if`, `else if`, and `else` statements to conditionally render different messages based on the temperature value:
-     - If the temperature is below 15, display: "It's cold outside!"
-     - If the temperature is between 15 and 25, display: "It's nice outside!"
-     - If the temperature is above 25, display: "It's hot outside!"
+1. 创建一个名为`Weather.jsx`的新文件。
+2. 在该文件中，创建一个名为`Weather`的函数式组件。
+3. 该组件应：
+   - 接收一个`temperature`属性（prop）。
+   - 使用`if`、`else if`和`else`语句根据温度值有条件地渲染不同的消息：
+     - 如果温度低于15，显示："外面很冷！"
+     - 如果温度在15到25之间，显示："外面天气很好！"
+     - 如果温度高于25，显示："外面很热！"
 
-#### Step 2: Create a `UserStatus` Component with the `&&` Operator
+#### 步骤2：使用`&&`运算符创建`UserStatus`组件
 
-1. Create a new file called `UserStatus.jsx`.
-2. Inside this file, create a functional component called `UserStatus`.
-3. The component should:
-   - Take two boolean props `loggedIn`, `isAdmin`
-   - Use the `&&` operator to display a message for Admin & Normal User:
-     - If `loggedIn` is `true` and `isAdmin` display: "Welcome Admin!"
-     - If it's just `loggedIn` and not admin then display "Welcome User".
+1. 创建一个名为`UserStatus.jsx`的新文件。
+2. 在该文件中，创建一个名为`UserStatus`的函数式组件。
+3. 该组件应：
+   - 接收两个布尔类型的属性（prop）：`loggedIn`和`isAdmin`
+   - 使用`&&`运算符为管理员和普通用户显示不同的消息：
+     - 如果`loggedIn`为`true`且`isAdmin`为真，显示："欢迎管理员！"
+     - 如果仅`loggedIn`为真且不是管理员，则显示"欢迎用户"。
 
-#### Step 3: Create a `Greeting` Component with a Ternary Operator
+#### 步骤3：使用三元运算符创建`Greeting`组件
 
-1. Create a new file called `Greeting.jsx`.
-2. Inside this file, create a functional component called `Greeting`.
-3. The component should:
-   - Take a `timeOfDay` prop (e.g., `"morning"`, `"afternoon"`, or `"evening"`).
-   - Use the ternary operator to conditionally display different greetings based on the time of day:
-     - If `timeOfDay` is `"morning"`, display: "Good morning!"
-     - If `timeOfDay` is `"afternoon"`, display: "Good afternoon!"
+1. 创建一个名为`Greeting.jsx`的新文件。
+2. 在该文件中，创建一个名为`Greeting`的函数式组件。
+3. 该组件应：
+   - 接收一个`timeOfDay`属性（prop）（例如：`"morning"`、`"afternoon"`或`"evening"`）。
+   - 使用三元运算符根据一天中的不同时段有条件地显示不同的问候语：
+     - 如果`timeOfDay`是`"morning"`，显示："早上好！"
+     - 如果`timeOfDay`是`"afternoon"`，显示："下午好！"
 
-#### Step 4: Render the Components in `App.jsx`
+#### 步骤4：在`App.jsx`中渲染组件
 
-1. In your `App.jsx` file, import the `Weather`, `UserStatus`, and `Greeting` components:
+1. 在你的`App.jsx`文件中，导入`Weather`、`UserStatus`和`Greeting`组件：
 
    ```jsx
    import Weather from "./Weather";
@@ -43,29 +43,30 @@ In this exercise, you will practice different ways to render JSX conditionally i
    import Greeting from "./Greeting";
    ```
 
-2. Inside the `App` component, render each component with different props to test the conditional rendering logic.
+2. 在`App`组件内部，传递不同的属性（prop）渲染每个组件，以测试条件渲染逻辑。
 
-Example:
+示例：
 
 ```jsx
 function App() {
   return (
     <div>
-      <h1>Conditional Rendering in React</h1>
+      <h1>React中的条件渲染</h1>
 
-      {/* Weather component */}
+      {/* Weather组件 */}
       <Weather temperature={10} />
       <Weather temperature={20} />
       <Weather temperature={30} />
 
-      {/* UserStatus component */}
-      <UserStatus loggedIn={true} />
+      {/* UserStatus组件 */}
+      <UserStatus loggedIn={true} isAdmin={true} />
+      <UserStatus loggedIn={true} isAdmin={false} />
       <UserStatus loggedIn={false} />
 
-      {/* Greeting component */}
+      {/* Greeting组件 */}
       <Greeting timeOfDay="morning" />
       <Greeting timeOfDay="afternoon" />
-      <Greeting />
+      <Greeting timeOfDay="evening" />
     </div>
   );
 }
